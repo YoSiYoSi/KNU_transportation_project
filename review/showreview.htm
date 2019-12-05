@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  
+  body{
+  text-align:center;
+  
+  }
+  
+  .button1 {
+    background-color: white;
+	width:150px;
+    color: #A6C7E7;
+    border: 2px solid #A6C7E7;
+    padding: 10px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	font-weight:bold;
+}
+
+.button1:hover {background-color: #A6C7E7;
+color:white;}
+
+ .button2 {
+    background-color: white;
+	width:70px;
+    color: #A6C7E7;
+    border: 2px solid #A6C7E7;
+	padding-top:10px;
+	padding-bottom:10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	font-weight:bold;
+}
+
+.button2:hover {background-color: #A6C7E7;
+color:white;}
+
+#info{
+height:100vh;
+width:100vw;
+overflow:hidden;
+border:none;
+}
+
+
+  </style>
+  
+  </head>
+  <body style="margin:0px; padding:0px; overflow:hidden;">
+<form action = "reviewselect.cgi" target="review" method="get" name="Form1">
+<input type = "hidden" value = "Yangkids" name = "dbname">
+
+  <div class="wrapper">
+<select name="trans" class="button2">
+  <option value="1호선">&nbsp;1호선</option>
+  <option value="2호선">&nbsp;2호선</option>
+  <option value="3호선">&nbsp;3호선</option>
+   <option value="300">&nbsp;300</option>
+  <option value="306">&nbsp;306</option>
+  <option value="405">&nbsp;405</option>
+  <option value="523">&nbsp;523</option>
+  <option value="649">&nbsp;649</option>
+  <option value="706">&nbsp;706</option>
+  <option value="719">&nbsp;719</option>
+  <option value="급행3">&nbsp;급행3</option>
+  <option value="급행6">&nbsp;급행6</option>
+  </select>
+  <input type="submit" value='검색' class='button2'></input>
+ <a href="write.htm" target="content"><input type="button" value='리뷰 등록' class='button2'></a></input>
+</div>
+
+  </form>
+
+
+  </div>
+  <div class="col-sm-8">
+  <input type='hidden' value='Yangkids' name='dbname'></input>
+  <br><iframe src="review.cgi?dbname=Yangkids" id="info" name="review"></iframe>
+  </div>
+  </div>
+  
+  
+  </body>
+  </html>

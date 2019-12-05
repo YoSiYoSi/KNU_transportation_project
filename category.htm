@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style>
+table
+{border:0px;
+width:900px;
+text-align:center;
+color:#92BADF;
+}
+#on1, on2, on3{
+
+    transition-duration: 0.4s;}
+</style>
+ </head>
+<body>
+<center>
+<table style="margin-top:50px;">
+<tr>
+<td><center><a href="info/info.htm"target="page"><img onmouseover="over1()"  onmouseout="out1()" src="image/info.png"></a></td>
+<td><center><a href="review/review.htm"target="page"><img onmouseover="over2()" onmouseout="out2()" src="image/review.png"></a></td>
+<td><center><a href="direct/direct.htm"target="page"><img onmouseover="over3()"  onmouseout="out3()" src="image/select.png"></a></td>
+<td><center><a href="custom/custom.htm"target="page"><img onmouseover="over4()" onmouseout="out4()" src="image/set.png"></a></td></tr></table>
+
+<br>
+<table>
+<tr><td id="on1" width="200px"></td><td id="on2" width="200px"></td><td id="on3" width="200"><td id="on4" width="200px"></td></td></tr>
+</table>
+<script>
+
+var tmp1=document.getElementById("on1");
+var tmp2=document.getElementById("on2");
+var tmp3=document.getElementById("on3");
+var tmp4=document.getElementById("on4");
+function over1(){
+
+tmp1.innerHTML="<font size='2px'>버스·지하철 전체 노선 정보";
+}
+
+function over2(){
+
+tmp2.innerHTML="<font size='2px'>노선의 리뷰 확인 및 등록";
+}
+
+function over3(){
+
+tmp3.innerHTML="<font size='2px'>직행 버스 노선과 시간 정보";
+}
+
+function over4(){
+
+tmp4.innerHTML="<font size='2px'>환승 및 직행 노선 정보";
+}
+
+
+
+
+
+function out1(){
+tmp1.innerHTML="";
+}
+
+function out2(){
+tmp2.innerHTML="";
+}
+
+function out3(){
+tmp3.innerHTML="";
+
+}
+function out4(){
+tmp4.innerHTML="";
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>
